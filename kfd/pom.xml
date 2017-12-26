@@ -75,7 +75,7 @@
                     <replacements>
                         <replacement>
                             <token>PROJECT_NAME</token>
-                            <value>${project.build.finalName}.jar</value>
+                            <value>${project.build.finalName}</value>
                         </replacement>
                     </replacements>
                 </configuration>
