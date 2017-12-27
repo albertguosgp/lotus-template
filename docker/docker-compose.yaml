@@ -8,3 +8,10 @@ services:
       - "9090:9090"
   hazelcast:
     image: "hazelcast/hazelcast:3.8"
+  hazelcast-management-center:
+    image: "hazelcast/management-center:3.9.1"
+    links:
+      - hazelcast
+      - kfd
+    ports:
+      - "8080:9097"
