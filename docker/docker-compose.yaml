@@ -1,6 +1,10 @@
 version: '3'
 services:
   kfd:
-    image:
+    image: "albert-repo/kfd:0.0.1-SNAPSHOT"
+    links:
+      - hazelcast
+    ports:
+      - "9090:9090"
   hazelcast:
     image: "hazelcast/hazelcast:3.8"
