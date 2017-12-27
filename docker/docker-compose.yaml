@@ -1,0 +1,6 @@
+version: '3'
+services:
+  kfd:
+    image: 
+  hazelcast:
+    image: "hazelcast/hazelcast:3.8"
